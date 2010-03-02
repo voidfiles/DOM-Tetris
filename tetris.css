@@ -6,12 +6,15 @@ body {overflow:hidden; background: #d7d7d7;margin:0;padding:0;}
   /*border: 1px solid black;*/
 }
 #canvas {
+  position:absolute;
   background-color: #000;
   color: #fff;
-  height: 460px;
+  height: 440px;
   border-right:1px solid #fff;
+  top:20px;
+  left:0;
 }
-#canvas h1 {margin: 0; padding: 0; text-align: center; font-size: 30px; padding-top: 200px;}
+#canvas h1 {margin: 0; padding: 0;text-align: center; font-size: 30px; padding-top: 200px;}
 .piece {
   border: 1px solid white;
   position: absolute;
@@ -29,10 +32,12 @@ body {overflow:hidden; background: #d7d7d7;margin:0;padding:0;}
 .type4 {background-color: #00F000;}
 .type5 {background-color: #F00000;}
 .type6 {background-color: #F0F000;}
-#next_shape {position: relative; background-color: #000; border: 1px solid white;width: 100px; height: 90px;border-left:none;}
+#next_shape {position: relative; top:20px;background-color: #000; border: 1px solid white;width: 100px; height: 90px;border-left:none;}
 #info {background-color: #000; color: #fff; width: 100px; float:left;}
+#level {padding-top:10px;}
 .game_area{
     width:220px;
+    height:460px;
     float:left;
 }
 .control {
@@ -52,10 +57,10 @@ body {overflow:hidden; background: #d7d7d7;margin:0;padding:0;}
     left:110px;
 }
 .move_rotate{
-    height:258px;
+    height:238px;
     width:218px;
     left:0px;
-    top:0px;
+    top:20px;
 }
 .move_down, .move_show_controls {
     width:218px;
@@ -107,4 +112,12 @@ body {overflow:hidden; background: #d7d7d7;margin:0;padding:0;}
     position:absolute;
     top:0px;
     left:0px;
+}
+
+#ownz {
+    position:absolute;
+    top:0;
+    left:0;
+    height:20px;
+    color:#fff;
 }
